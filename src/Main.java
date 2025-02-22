@@ -22,7 +22,7 @@ public class Main {
 
     // check reverse functionality of given set of integers
 
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the number");
         int num = sc.nextInt();
         int rev = 0;
@@ -31,6 +31,16 @@ public class Main {
             rev = rev * 10 + num % 10;
             num = num / 10;
         }
-        System.out.println(rev);
+        System.out.println(rev);*/
+
+
+
+        // adding string buffer method for revers string function
+
+        String str = "abcdefgh";
+        String rev = "";
+
+        StringBuffer sb = new StringBuffer(str);
+        System.out.println(sb.reverse());
     }
 }
