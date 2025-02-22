@@ -37,10 +37,25 @@ public class Main {
 
         // adding string buffer method for revers string function
 
-        String str = "abcdefgh";
+        /*String str = "abcdefgh";
         String rev = "";
 
         StringBuffer sb = new StringBuffer(str);
-        System.out.println(sb.reverse());
+        System.out.println(sb.reverse());*/
+
+        //char array method for reverse string
+
+        String str = "Thisal";
+        char[] a = str.toCharArray();
+        String rev = "";
+        int len = a.length;
+        for (int i=len-1; i>=0; i--){
+            rev = rev + a[i];
+        }
+        System.out.println(rev);
+
+
+
+
     }
 }
