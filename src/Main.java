@@ -45,15 +45,26 @@ public class Main {
 
         //char array method for reverse string
 
-        String str = "Thisal";
+        /*String str = "Thisal";
         char[] a = str.toCharArray();
         String rev = "";
         int len = a.length;
         for (int i=len-1; i>=0; i--){
             rev = rev + a[i];
         }
-        System.out.println(rev);
+        System.out.println(rev);*/
 
+        //Create a triangle use * for a given count
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of columns you want ");
+        int numberLine = sc.nextInt();
+        int row, column = 0;
+        for(row=0; row<=numberLine; row++){
+            for (column=0; column<=row; column++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
 
 
 
