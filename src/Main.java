@@ -55,7 +55,7 @@ public class Main {
         System.out.println(rev);*/
 
         //Create a triangle use * for a given count
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of columns you want ");
         int numberLine = sc.nextInt();
         int row, column = 0;
@@ -64,9 +64,16 @@ public class Main {
                 System.out.print(" *");
             }
             System.out.println();
+        }*/
+
+        String checkChar = "LearnAutomationwithJava";
+        char[] checkCount = checkChar.toCharArray();
+        int length = 0;
+
+        for(Character c:checkCount){
+            length++;
         }
-
-
+        System.out.println(length);
 
     }
 }
